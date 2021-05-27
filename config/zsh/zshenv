@@ -1,0 +1,12 @@
+# SETUP
+[[ -f $HOME/.asdf/asdf.sh ]] && source $HOME/.asdf/asdf.sh
+[[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh
+[[ -f ~/.bin/z.sh ]] && source ~/.bin/z.sh
+[[ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]] && source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# COMPLETIONS
+fpath=(${ASDF_DIR}/completions $fpath)
+
+# EXPORTS
+export ERL_AFLAGS="-kernel shell_history enabled"
+
