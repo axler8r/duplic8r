@@ -6,7 +6,11 @@ alias ls='lsi --classify --group-directories-first --sort=extension --color=auto
 alias ll='ls -l '
 alias la='ls -A '
 alias l='ls -1 '
-# push & pop
+# cd, push & pop
+alias ..='cd .. '
+alias ...='cd ../../ '
+alias ....='cd ../../../ '
+alias .....='cd ../../../../ '
 alias stack='dirs -v '
 # man
 man() {
@@ -29,4 +33,3 @@ alias -g L='| less -N '
 
 # SUFFIX
 alias -s {asc,erl,ex,exs,htm{l},rebar,rs,txt}=gedit
-
