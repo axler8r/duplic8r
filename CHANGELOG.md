@@ -1,4 +1,10 @@
 # RELEASE NOTES
+## 1.1.0
+**2021-05-30**
++ Simplify shell configuration
++ Remove redundant files
++ Add install scripts
+
 ## 1.0.5
 **2019-11-23**
 + Baseline for refactoring.
