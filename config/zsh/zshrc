@@ -95,7 +95,7 @@
 #    * Update this file every X years as needed
 
 
-# COMPLETION
+# COMPLETION OPTIONS
 zstyle ':completion:*' completer _complete _ignored
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' '+r:|[._-]=* r:|=*'
@@ -104,8 +104,8 @@ autoload -Uz compinit
 compinit
 
 
-# OPTIONS
-HISTFILE=~/.histfile
+# SETTINGS
+HISTFILE=$HOME/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 setopt autocd
@@ -117,12 +117,13 @@ setopt bang_hist
 bindkey -v
 
 
-# CONFIGURATION
-[[ -f ~/.zshfunction ]] && source ~/.zshfunction
-[[ -f ~/.zshalias ]] && source ~/.zshalias
-[[ -f ~/.zshprompt ]] && source ~/.zshprompt
+# CONFIGURATIONS
+[[ -f $HOME/.zshfunction ]] && source $HOME/.zshfunction
+[[ -f $HOME/.zshalias ]] && source $HOME/.zshalias
+[[ -f $HOME/.zshprompt ]] && source $HOME/.zshprompt
 
 
 # STUFF THAT MUST BE SET AFTER PROMPT
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[[ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[[ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]] && source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
