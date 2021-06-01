@@ -12,6 +12,8 @@ alias ...='cd ../../ '
 alias ....='cd ../../../ '
 alias .....='cd ../../../../ '
 alias stack='dirs -v '
+alias pushd='pushd -q '
+alias popd='popd -q '
 # man
 man() {
     # dynamically adjust the width of the man display
@@ -32,4 +34,4 @@ alias -g B='| bat '
 alias -g L='| less -N '
 
 # SUFFIX
-alias -s {asc,erl,ex,exs,htm{l},rebar,rs,txt}=gedit
+alias -s {asc,erl,ex,exs,htm{l},py,rebar,rs,txt}=gedit

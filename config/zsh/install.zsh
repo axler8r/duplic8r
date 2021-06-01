@@ -1,25 +1,25 @@
 #!/usr/bin/zsh
 
-NOW=$(date +%y%m%d%H%M%S)
+_NOW=$(date +%y%m%d%H%M%S)
 
 # make backups
 backup() {
-    foreach file in $HOME/.zsh{env,rc,function,alias,prompt}
+    foreach _FILE in $(command ls -I"install*")
     do
-        if [[ -f $file ]]
+        if [[ -f ${HOME}/.${_FILE} ]]
         then
-            mv $file $file-$NOW
-            echo "Moved $file to $file-$NOW."
+            mv ${HOME}/.${_FILE} ${HOME}/.${_FILE}-${_NOW}
+            echo "Moved ${HOME}/.${_FILE} to ${HOME}/.${_FILE}-${_NOW}."
         fi
     done
 }
 
 # link files
 link() {
-    for file in zsh*
+    foreach _FILE in $(command ls -I"install*")
     do
-        ln -s $(pwd)/$file $HOME/.$file
-        echo "Linked $(pwd)/$file to $HOME/.$file"
+        ln -s $(pwd)/${_FILE} ${HOME}/.${_FILE}
+        echo "Linked $(pwd)/${_FILE} to ${HOME}/.${_FILE}."
     done
 }
 
