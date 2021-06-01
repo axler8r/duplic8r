@@ -1,12 +1,11 @@
 [user]
-    name = Axl Mattheus
-    email = axl.mattheus@gmail.com
+    name = AxlER8R
+    email = axl@axler8r.io
 [color]
 	ui = true
 [core]
-    editor = code --wait
+    editor = nvim
     excludesfile = ~/.gitignore
-    # autocrlf = true
 [merge]
     tool = meld
 [diff]
@@ -21,3 +20,6 @@
     autosetuprebase = never
 [push]
     default = simple
+[credential "https://github.com"]
+	helper = 
+	helper = !/home/axl/.asdf/installs/github-cli/1.10.0/bin/gh auth git-credential
