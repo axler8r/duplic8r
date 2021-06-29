@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/usr/bin/env zsh
 
 _NOW=$(date +%y%m%d%H%M%S)
 if [[ -v XDG_CONFIG_HOME ]]
