@@ -1,5 +1,5 @@
 {
-    "name": "Monokai",
+    "name": "Material Lighter",
     "groups": {
         "information:additional":     { "fg": "monokai:base2",         "bg": "monokai:base01",  "attrs": [] },
         "information:regular":        { "fg": "monokai:base3",         "bg": "monokai:base01",  "attrs": ["bold"] },

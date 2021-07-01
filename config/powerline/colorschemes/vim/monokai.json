@@ -1,5 +1,5 @@
 {
-	"name": "Solarized dark for vim",
+	"name": "Monokai for vim",
 	"groups": {
 		"information:additional":   { "fg": "monokai:base2", "bg": "monokai:base01", "attrs": [] },
 		"information:unimportant":  { "fg": "monokai:base3", "bg": "monokai:base01", "attrs": [] },
