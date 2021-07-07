@@ -1,5 +1,14 @@
 = RELEASE NOTES
 
+== 2.0.0
+.*2021-07-07*
+* Add powerline color themes
+* Add devilspie configuration files
+* Enable GitHub code sign
+* Update README file
+* Convert _Markdown_ files to _Asciidoc_ files
+* Clear out the attic
+
 == 1.1.2
 .*2021-06-10*
 * Update zshenv file
