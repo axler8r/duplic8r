@@ -25,3 +25,5 @@
 [push]
     default = simple
 
+[gc]
+	autoDetach = false
