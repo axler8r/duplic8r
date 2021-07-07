@@ -1,6 +1,6 @@
 # RELEASE NOTES
 ## 1.1.2
-**2021-0610**
+**2021-06-10**
 + Update zshenv file
 + Add powershell configuration
 + Create powershell install script
